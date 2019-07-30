@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
@@ -8,7 +8,7 @@ import { linkTo } from '@storybook/addon-links';
 import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
-import TransparentCard from './TransparentCard';
+import TransparentCard from './TransparentCard/TransparentCard';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -26,9 +26,9 @@ storiesOf('Button', module)
   ));
 
 storiesOf('Card', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator(getStory => <CenterView><View style={{ height: 300, width: 300 }}>{getStory()}</View></CenterView>)
   .add('with transparency', () => (
-    <TransparentCard style={ {width: 100, height: 100, position: 'absolute'} }>
+    <TransparentCard>
       <Text>Transparent Card</Text>
     </TransparentCard>
-  ))
+  ));
