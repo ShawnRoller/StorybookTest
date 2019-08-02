@@ -27,7 +27,8 @@
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.55.0",
     "react-dom": "16.8.6",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.8.6",
+    "sb_test_stories": "offensivelybad/sb_test_stories#master"
   },
   "jest": {
     "preset": "react-native"

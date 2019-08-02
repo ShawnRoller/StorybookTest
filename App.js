@@ -57,7 +57,7 @@ class App extends React.Component {
               )}
               <View style={styles.body}>
                 <TouchableOpacity onPress={() => this.setState({ showStorybookUI: !this.state.showStorybookUI })}>
-                  <Text>Show storybook, biatch!</Text>
+                  <Text>Show storybook, son!</Text>
                 </TouchableOpacity>
                 <View style={styles.sectionContainer}>
                   <Text style={styles.sectionTitle}>Step One</Text>
