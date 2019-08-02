@@ -1,0 +1,28 @@
+{
+  "_from": "github:offensivelybad/sb_test_stories#master",
+  "_id": "sb_test_stories@0.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/sb_test_stories",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "sb_test_stories@github:offensivelybad/sb_test_stories#master",
+    "name": "sb_test_stories",
+    "escapedName": "sb_test_stories",
+    "rawSpec": "github:offensivelybad/sb_test_stories#master",
+    "saveSpec": "github:offensivelybad/sb_test_stories#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "github:offensivelybad/sb_test_stories#ae951f41d636c2ab4eb7d96753f15b0bde229417",
+  "_spec": "sb_test_stories@github:offensivelybad/sb_test_stories#master",
+  "_where": "/Users/shawn/Development/React-Native/StorybookTest",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "name": "sb_test_stories",
+  "version": "0.0.1"
+}
