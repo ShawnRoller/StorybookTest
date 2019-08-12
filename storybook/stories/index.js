@@ -4,6 +4,7 @@ import { Text, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Button from './Button';
 import CenterView from './CenterView';
@@ -27,8 +28,9 @@ storiesOf('Button', module)
 
 storiesOf('Card', module)
   .addDecorator(getStory => <CenterView><View style={{ height: 300, width: 300 }}>{getStory()}</View></CenterView>)
+  .addDecorator(withKnobs)
   .add('with transparency', () => (
     <TransparentCard>
-      <Text>Transparent Card</Text>
+      <Text>{text('Label', 'Gray Card')}</Text>
     </TransparentCard>
   ));
