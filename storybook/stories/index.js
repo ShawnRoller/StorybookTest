@@ -31,6 +31,6 @@ storiesOf('Card', module)
   .addDecorator(withKnobs)
   .add('with transparency', () => (
     <TransparentCard>
-      <Text>{text('Label', 'Gray Card')}</Text>
+      <Text>{text('Label', 'Transparent Card')}</Text>
     </TransparentCard>
   ));
