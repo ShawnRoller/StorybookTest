@@ -10,6 +10,7 @@ import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 import TransparentCard from './TransparentCard/TransparentCard';
+import StepNumber from './Numbers/StepNumber';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -34,3 +35,13 @@ storiesOf('Card', module)
       <Text>{text('Label', 'Transparent Card')}</Text>
     </TransparentCard>
   ));
+
+storiesOf('Numbers', module)
+  .addDecorator(getStory => <CenterView><View style={{ height: 300, width: 300 }}>{getStory()}</View></CenterView>)
+  .addDecorator(withKnobs)
+  .add('with color', () => (
+    <StepNumber>
+      <Text>{text('Label', '1')}</Text>
+    </StepNumber>
+  ));
+  
